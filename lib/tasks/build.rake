@@ -13,7 +13,7 @@ namespace :build do
   desc 'build'
   task :unstable do
     env = {
-      "JAVA_HOME" => "/Library/Java/JavaVirtualMachines/openjdk-24.jdk/Contents/Home"
+      "JAVA_HOME" => "/Library/Java/JavaVirtualMachines/openjdk-25.jdk/Contents/Home"
     }
     cp_root = File.join(PROJECT_ROOT, "versions/unstable/java")
     cp = [File.join(cp_root, "projectzomboid.jar")].join(",")
